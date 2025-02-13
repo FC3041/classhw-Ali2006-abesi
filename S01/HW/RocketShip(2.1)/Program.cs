@@ -1,0 +1,20 @@
+﻿Console.WriteLine("     ^      ");
+Console.WriteLine("    /|\\    ");
+Console.WriteLine("   //|\\\\   ");
+Console.WriteLine("  ///|\\\\\\  ");
+Console.WriteLine(" +-------+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +-------+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +*******+  ");
+Console.WriteLine(" +-------+  ");
+Console.WriteLine("     ^      ");
+Console.WriteLine("    /|\\    ");
+Console.WriteLine("   //|\\\\   ");
+Console.WriteLine("  ///|\\\\\\  ");
+// اینجا هم باید به تعداد بک اسلش دقت کنم هر دوتا بک اسلش معادل یک بک اسلش است
