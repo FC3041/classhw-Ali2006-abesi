@@ -55,6 +55,34 @@ class circle
                 cout<<"point out circle!"<<endl;
             }
         }
+        double Momase_moshtrac_kharegi(circle q){
+            double d = Fasele_Markaz_2_circle(q);
+            double d_r=r-q.r;
+            return sqrt(d*d-d_r*d_r);
+        }
+        double Momase_moshtrac_dakheli(circle q){
+            double d = Fasele_Markaz_2_circle(q);
+            double d_r=r+q.r;
+            return sqrt(d*d-d_r*d_r);
+        }
+        void Baresi_vaziat_2_circle(circle b){
+            double dd=Fasele_Markaz_2_circle(b);
+            if (dd>r+b.r){
+                cout<<"out of each other"<<endl;
+            }
+            else if (dd<r+b.r){
+                cout<<"part of each other"<<endl;
+            }
+            else if (dd==r+b.r){
+                cout<<"tangent of each other"<<endl;
+            }
+            else if (dd==abs(r-b.r)){
+                cout<<"tangent_in each other"<<endl;
+            }
+            else if (dd<abs(r-b.r)){
+                cout<<"canon of each other"<<endl;
+            }
+        }
         
 };
 
@@ -68,9 +96,9 @@ class circle
 // }
 
 // double Fasele_Markaz_2_circle(circle a , circle b){
-    // double Fasele_x=a.x-b.x;
-    // double Fasele_y=a.y-b.y;
-    // return sqrt(Fasele_x*Fasele_x+Fasele_y*Fasele_y);
+//     double Fasele_x=a.x-b.x;
+//     double Fasele_y=a.y-b.y;
+//     return sqrt(Fasele_x*Fasele_x+Fasele_y*Fasele_y);
 // }
 
 // double Fasele_point_az_Markaz_circle(point f , circle c){
@@ -90,7 +118,28 @@ class circle
 //         cout<<"point out circle!"<<endl;
 //     }
 // }
-
+// double Momase_moshtrac_kharegi(circle c , circle q){
+//     double d = Fasele_Markaz_2_circle(c,q);
+//     double d_r=c.r-q.r;
+//     return sqrt(d*d-d_r*d_r);
+// }
+// double Momase_moshtrac_dakheli(circle c , circle q){
+//     double d = Fasele_Markaz_2_circle(c,q);
+//     double d_r=c.r+q.r;
+//     return sqrt(d*d-d_r*d_r);
+// }
+// void Baresi_vaziat_2_circle(circle a , circle b){
+//     double dd=Fasele_Markaz_2_circle(a,b);
+//     if (dd>a.r+b.r){
+//         cout<<"out of each other"<<endl;
+//     }
+//     if (dd<a.r+b.r){
+//         cout<<" part of each other"<<endl;
+//     }
+//     if (dd==a.r+b.r){
+//         cout<<"tangent of each other"<<endl;
+//     }
+// }
 int main(){
 
     circle c1(0,0,5);
@@ -101,6 +150,9 @@ int main(){
     cout<<"Fasele_Markaz_2_circle : "<<c1.Fasele_Markaz_2_circle(c2)<<endl;
     cout<<"Fasele_point_az_Markaz_circle : "<<c2.Fasele_point_az_Markaz_circle(a)<<endl;
     c1.is_point_in_or_out_or_on_circle(a);
+    cout<<"Momase_moshtrac_kharegi_2_circle : "<<c1.Momase_moshtrac_kharegi(c2)<<endl;
+    cout<<"Momase_moshtrac_dakheli_2_circle : "<<c1.Momase_moshtrac_dakheli(c2)<<endl;
+    c1.Baresi_vaziat_2_circle(c2);
     
     return 0;
 }
