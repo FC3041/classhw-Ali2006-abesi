@@ -114,6 +114,5 @@ int main(){
     for(int j=0;j<nums.size();j++){
         cout<<nums.at(j)<<" , ";
     }
-
     return 0;
 }

@@ -122,7 +122,6 @@ class String
 
 
 int main(){
-
     String name;
     String name2("ABESI");
     name.assign("ALI mohammad");
@@ -133,6 +132,5 @@ int main(){
     cout<<name.capacity()<<endl;
     cout<<name.size()<<endl;
     cout<<name.checkSubstr("AES")<<endl;
-
     return 0;
 }
