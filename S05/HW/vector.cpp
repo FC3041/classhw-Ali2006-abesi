@@ -2,7 +2,11 @@
 #include<stdlib.h>
 
 using namespace std;
-
+// template<typename T>  you can define the type of your list by the same method 
+//==>
+//vector<int>l1;
+//vector<float>l2;
+//vector<double>l3;
 class Vector_int
 {
     private:
@@ -38,7 +42,13 @@ class Vector_int
         return m_lengh;
     }
     int at(int index){
-        return m_listnum[index];
+        if(index<m_lengh){
+
+            return m_listnum[index];
+        }
+        else{
+            throw out_of_range("Out of the range");
+        }
     }
 
     int insert(int index , int num){
@@ -69,6 +79,13 @@ class Vector_int
         m_capacity=1;
         return 0;
     }
+    void reverse(){
+        for(int i=0;i<int(m_lengh/2);i++){
+            int temp = m_listnum[i];
+            m_listnum[i]=m_listnum[m_lengh-i-1];
+            m_listnum[m_lengh-i-1]=temp;
+        }
+    }
 
 };
 
@@ -84,6 +101,8 @@ int main(){
     nums.push_back(78);
     nums.push_back(10);
     nums.push_back(8);
+    nums.push_back(9);
+    nums.reverse();
     for(int i=0;i<nums.size();i++){
         
         cout<<"The number"<<i<<" : "<<nums.at(i)<<endl;

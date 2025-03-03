@@ -89,4 +89,5 @@ int main(){
     s.namayesh_list_doros_pass_shodeh();
     cout<<"Average is : "<<s.hesab_kardan_moadel()<<endl;
     return 0 ;
+    
 }
