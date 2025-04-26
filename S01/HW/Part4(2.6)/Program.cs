@@ -1,0 +1,32 @@
+﻿namespace MyAsciiArg_print_cone2;
+
+class Program
+{   public static void print_cone(int n){
+        int x = (n+1)/2;
+        for(int z=x-1;z>=0;z--){
+                Console.Write(" ");
+            }
+            Console.WriteLine("^");
+        for(int i=1;i<x;i++){
+            for(int z=x-i-1;z>=0;z--){
+                Console.Write(" ");
+            }
+            for(int j=0;j<i;j++){
+                Console.Write("/");
+            }
+        Console.Write("|");
+            for(int j=0;j<i;j++){
+                Console.Write("\\");
+            }
+        Console.WriteLine();
+        }
+    
+    
+}
+    static void Main(string[] args)
+    {
+        for(int i=1;i<=9;i+=2){
+            print_cone(i);
+        }
+    }
+}
