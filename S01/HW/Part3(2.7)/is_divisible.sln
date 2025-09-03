@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "is_divisible", "is_divisible.csproj", "{173B3EEF-89D8-C012-8439-3F038470A6F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{173B3EEF-89D8-C012-8439-3F038470A6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173B3EEF-89D8-C012-8439-3F038470A6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173B3EEF-89D8-C012-8439-3F038470A6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173B3EEF-89D8-C012-8439-3F038470A6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BF234C0-C917-4481-B5D4-48BBBDC01DE7}
+	EndGlobalSection
+EndGlobal
